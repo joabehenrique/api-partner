@@ -43,90 +43,42 @@ To install API Partner, follow these steps:
 To use API Partner, follow these steps:
 
 ```
-Rocketlivery is a project where we use phoenix to manage new users,
-delete, update their information or just search for existing users.
+API Partner is a project where we used Phoenix to manage a single entity,
+where in it the partner could create its network structure,
+being able to create an entity, update or search by id.
 
-Ecto was used for persisting the data in the PostgreSQL database,
-doing several validations before and error handling in the requests.
+Ecto was used to persist the data in MySQL as well as search within the database.
 ```
 
-Getting a user
+Getting a entity
 
 ```
-(GET) api/v1/user/{id}
+(GET) api/v2/partners/entities/{id}
 ```
 
-Deleting a user
+Creating a entity
 
 ```
-(DELETE) api/v1/user/{id}
-```
-
-Creating a user
-
-```
-(POST) api/v1/user
+(POST) api/v2/partners/entities
 
 {
-    "name": "Joabe Henrique",
-    "email": "henriquecidoz@hotmail.com",
-    "cep": "12345678",
-    "cpf": "12345678900",
-    "address": "Rua Cristovao, n 94º",
-    "password": "jaue7235!@",
-    "age": 20
+  "name": "Escola Exemplo",
+  "entity_type": "school",
+  "inep": "12345678",
+  "parent_id": null
 }
 ```
 
-Changing a user
+Changing a entity
 
 ```
 (PUT) api/v1/user/{id}
 
 {
-    "name": "Joabe Henrique Carvalho",
-    "email": "joabe.souza@gmail.com",
-    "cep": "87654321",
-}
-```
-
-Creating a item
-
-(_Possible Categories_: `food`, `desert`, `drink`.)
-
-```
-(POST) api/v1/item
-
-{
-    "description": "PIZZA PORTUGUESA - PifPaf ",
-    "category": "food",
-    "price": "21.98",
-    "photo": "https://www.aws.s3/pizza.png"
-}
-```
-
-Creating a order
-
-(_Possible Payment Method_: `money`, `credit_card`, `debit_card`.)
-
-```
-(POST) api/v1/order
-
-{
-    "items" : [
-        {
-            "id": "ba4ccd7e-94d5-4c7f-a76d-77ed9418bb46",
-            "quantity": 2
-        },
-        {
-            "id": "c4e8b1d9-afc3-4537-ad8e-2c42432488a6",
-            "quantity" : 3
-        }
-    ],
-    "user_id": "865e5769-1f64-4b9e-b2ef-cd137fafb020",
-    "address" : "Rua Cristovao 90",
-    "payment_method" : "money",
-    "comments" : "Mandar mensagem ao chegar"
+  "name": "Escola Exemplo2",
+  "entity_type": "class",
+  "inep": "12345679",
+  "parent_id": "1"
 }
 ```
 
