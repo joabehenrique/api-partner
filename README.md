@@ -43,11 +43,13 @@ To install API Partner, follow these steps:
 To use API Partner, follow these steps:
 
 ```
-API Partner is a project where we used Phoenix to manage a single entity,
-where in it the partner could create its network structure,
-being able to create an entity, update or search by id.
+API Partner is a project where we used Phoenix
+to manage a single entity,where in it the partner
+could create its network structure,being able to
+create an entity, update or search by id.
 
-Ecto was used to persist the data in MySQL as well as search within the database.
+Ecto was used to persist the data in MySQL as well
+as search within the database.
 ```
 
 Getting a entity
