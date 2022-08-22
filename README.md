@@ -1,4 +1,4 @@
-# 🚀 API Partner
+# :deciduous_tree: API Partner
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/joabehenrique/api-partner?style=flat)
 ![GitHub language count](https://img.shields.io/github/languages/count/joabehenrique/api-partner?style=flat)
