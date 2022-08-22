@@ -13,10 +13,10 @@ config :api_partner,
 # Configures the endpoint
 config :api_partner, ApiPartnerWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "D8SpUdKLkwS/OnQXGoqvE9UBROQlpZcYqbNYf4V2RRmuf1BogeeDtqD/ApxUu/hH",
+  secret_key_base: "5DG8rYWtHKbervjbnseWhpetysAwY7ml4U7OziBcJ9vCMURdpp+89S1K8pd6oOnT",
   render_errors: [view: ApiPartnerWeb.ErrorView, accepts: ~w(json), layout: false],
   pubsub_server: ApiPartner.PubSub,
-  live_view: [signing_salt: "HpXZVzep"]
+  live_view: [signing_salt: "+0t06CMO"]
 
 # Configures Elixir's Logger
 config :logger, :console,
