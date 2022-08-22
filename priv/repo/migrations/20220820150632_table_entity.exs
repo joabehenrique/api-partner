@@ -5,7 +5,7 @@ defmodule ApiPartner.Repo.Migrations.TableEntity do
     create table(:entity) do
       add(:name, :string)
       add(:entity_type, :string)
-      add(:inep, :integer)
+      add(:inep, :string)
       add(:parent_id, :string)
 
       timestamps()
