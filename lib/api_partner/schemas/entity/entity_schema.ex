@@ -5,7 +5,7 @@ defmodule ApiPartner.Schemas.EntitySchema do
 
   @entity_names ["network", "school", "class"]
   @required_params [:name, :entity_type, :inep]
-  @derive {Jason.Encoder, only: [:id, :inserted_at, :updated_at, :parent_id] ++ @required_params}
+  @derive {Jason.Encoder, only: [:id, :parent_id] ++ @required_params}
 
   schema "entity" do
     field(:name, :string)
