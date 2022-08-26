@@ -43,7 +43,8 @@ defmodule ApiPartner.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:ex_machina, "~> 2.7.0"}
+      {:ex_machina, "~> 2.7.0", only: :test},
+      {:blankable, "~> 1.0.0"}
     ]
   end
 
